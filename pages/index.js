@@ -10,7 +10,13 @@ import { Box } from "@chakra-ui/react";
 
 export default function Home() {
 	return (
-		<Box bg="#FFE503" fontFamily="'Gochi Hand', cursive" color="#363015" fontSize={24}>
+		<Box
+			bg="#FFE503"
+			fontFamily="'Gochi Hand', cursive"
+			color="#363015"
+			fontSize={24}
+			pb={28}
+		>
 			<Head>
 				<title>$BBPEPE | Crown prince of memes</title>
 				<link rel="icon" href="static/images/favicon.ico" />
@@ -27,8 +33,10 @@ export default function Home() {
 					<About />
 					<Tokenomics />
 					{/* <Roadmap /> */}
-					<Contact />
-					<Disclaimer />
+					<Box textAlign="center">
+						<Contact />
+						<Disclaimer />
+					</Box>
 				</Box>
 			</main>
 		</Box>

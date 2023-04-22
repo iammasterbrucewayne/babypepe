@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<HStack>
+		<HStack my={32}>
 			<Image
 				src="/static/images/heir-flip.png"
 				width="1024px"
@@ -12,7 +12,7 @@ export default function About() {
 			/>
 			<Box>
 				<Header title="about" />
-				<Text>
+				<Text maxW={1000}>
 					Baby pepe is here to carry forward pepe's vission to make memecoins
 					great again. <br /> As the true heir to the most recognizable meme in
 					the world the baby pepe is here take his reign as crown prince of the

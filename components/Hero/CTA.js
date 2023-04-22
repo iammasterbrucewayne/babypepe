@@ -2,7 +2,7 @@ import { Button, ButtonGroup, Link, textDecoration } from "@chakra-ui/react";
 
 export default function CTA() {
 	return (
-		<ButtonGroup mt={8}>
+		<ButtonGroup mt={16}>
 			<Button
 				as="a"
 				href="https://app.uniswap.org/#/tokens/arbitrum/0x231ee5257a40d223aeee5043c88e1bcc40c57be4"
