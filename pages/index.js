@@ -12,6 +12,7 @@ export default function Home() {
 	return (
 		<Box
 			bg="#FFE503"
+			px={12}
 			fontFamily="'Gochi Hand', cursive"
 			color="#363015"
 			fontSize={24}
@@ -28,7 +29,7 @@ export default function Home() {
 
 			<main>
 				<Nav />
-				<Box maxW={960} mx="auto">
+				<Box maxW={960} mx="auto" px="auto">
 					<Hero />
 					<About />
 					<Tokenomics />
