@@ -1,23 +1,36 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from "next/head";
+import Nav from "@components/Nav/Nav";
+import Hero from "@components/Hero/Hero";
+import About from "@components/About/About";
+import Tokenomics from "@components/Tokenomics/Tokenomics";
+import Roadmap from "@components/Roadmap/Roadmap";
+import Contact from "@components/Contact/Contact";
+import Disclaimer from "@components/Disclaimer/Disclaimer";
+import { Box } from "@chakra-ui/react";
 
 export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Next.js Starter!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+	return (
+		<Box bg="#FFE503" fontFamily="'Gochi Hand', cursive" color="#363015" fontSize={24}>
+			<Head>
+				<title>$BBPEPE | Crown prince of memes</title>
+				<link rel="icon" href="static/images/favicon.ico" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+					rel="stylesheet"
+				/>
+			</Head>
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
-
-      <Footer />
-    </div>
-  )
+			<main>
+				<Nav />
+				<Box maxW={960} mx="auto">
+					<Hero />
+					<About />
+					<Tokenomics />
+					{/* <Roadmap /> */}
+					<Contact />
+					<Disclaimer />
+				</Box>
+			</main>
+		</Box>
+	);
 }
